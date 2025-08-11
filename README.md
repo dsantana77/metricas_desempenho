@@ -5,12 +5,12 @@ Avaliação de Modelos de Classificação com Métricas de Desempenho
 Treinar um modelo de classificação (por exemplo, usando LogisticRegression ou RandomForest) e calcular as principais métricas para interpretar seu desempenho.
 
 ## projeto_metricas/
-│
-├── data/                # Dataset usado (pode ser CSV real ou gerado)
-├── metricas.py          # Funções para cálculo das métricas
-├── treino_modelo.py     # Treinamento do modelo e uso das métricas
-├── requirements.txt     # Bibliotecas necessárias
-└── README.md            # Documentação
+####│
+####├── data/                # Dataset usado (pode ser CSV real ou gerado)
+####├── metricas.py          # Funções para cálculo das métricas
+####├── treino_modelo.py     # Treinamento do modelo e uso das métricas
+####├── requirements.txt     # Bibliotecas necessárias
+####└── README.md            # Documentação
 
 
 ## Fluxo básico do projeto
