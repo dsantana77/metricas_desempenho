@@ -1,42 +1,30 @@
 # metricas_desempenho
 Avaliação de Modelos de Classificação com Métricas de Desempenho
 
-## Objetivo:
-Treinar um modelo de classificação (por exemplo, usando LogisticRegression ou RandomForest) e calcular as principais métricas para interpretar seu desempenho.
+# Projeto: Avaliação de Modelos de Classificação com Deep Learning
+Fluxo
+Dataset
 
-## projeto_metricas/
-│
+Podemos usar um conjunto binário como Breast Cancer (sklearn) ou PIMA Indians Diabetes (muito usado para classificação binária).
 
-├── data/                # Dataset usado (pode ser CSV real ou gerado)
+Pré-processamento
 
-├── metricas.py          # Funções para cálculo das métricas
+Normalização das features (StandardScaler).
 
-├── treino_modelo.py     # Treinamento do modelo e uso das métricas
+Divisão treino/teste.
 
-├── requirements.txt     # Bibliotecas necessárias
+Construção da rede neural
 
-└── README.md            # Documentação
+Arquitetura simples (entrada → camadas densas → saída sigmoide).
+
+Treinamento
+
+Função de perda: binary_crossentropy.
+
+Otimizador: adam.
+
+Cálculo das métricas
+
+Usar confusion_matrix para sensibilidade, especificidade.
 
 
-## Fluxo básico do projeto
-Coleta/geração dos dados
-
-Usar um dataset pronto (sklearn.datasets.load_breast_cancer, load_iris, ou outro binário).
-
-Divisão em treino e teste
-
-train_test_split
-
-Treinamento do modelo
-
-Logistic Regression ou Random Forest.
-
-Predição e cálculo das métricas
-
-Usar sklearn.metrics para acurácia, precisão, recall, f1-score.
-
-Especificidade = TN / (TN + FP) (calculada manualmente a partir da confusion matrix).
-
-Exibição dos resultados
-
-Mostrar no terminal e também em tabela formatada.
